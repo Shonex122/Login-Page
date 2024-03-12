@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dash</title>
+    <title>Employee list</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -57,7 +57,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="employee-list.html">Employee</a>
+              <a class="nav-link" href="employees-list.html">Employees</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Jobs</a>
@@ -107,202 +107,213 @@
       </div>
     </nav>
 
-    <!-- Emplo yees data -->
+    <!-- Employees Data -->
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-2">
           <div class="list-group shadow-sm small mb-3">
-            <div class="list-group-item active">Employees data</div>
+            <div class="list-group-item active">Employees Data</div>
             <a
               href="#"
               class="list-group-item list-group-item-action"
+              data-bs-target="#add_employee"
               data-bs-toggle="modal"
-              data-bs-target="#add_employees"
-              >Add Employee</a
+            >
+              Add Employee</a
             >
             <a
-              href="employee-list.html"
+              href="employees-list.html"
               class="list-group-item list-group-item-action"
-              >View Employees</a
+              >View Employee</a
             >
           </div>
           <div class="list-group shadow-sm small mb-3">
-            <div class="list-group-item active">Related Links</div>
+            <div class="list-group-item active">Related links</div>
             <a href="#" class="list-group-item list-group-item-action"
-              >Jobs List
-            </a>
+              >Jobs List</a
+            >
           </div>
         </div>
         <div class="col-md-10">
           <div class="card shadow-sm border-0 mb-3">
             <div class="card-header text-bg-dark text-center">
-              Employee List
+              Employees list
             </div>
-            <table
-              class="table table-sm small table-bordered align-middle mb-0"
-            >
+            <table class="table table-sm table-bordered align-middle mb-0">
               <tr class="table-secondary">
                 <th>ID</th>
-                <th>Email ID</th>
+                <th>Employee ID</th>
                 <th>Name</th>
-                <th>Employee</th>
-                <th>Detials</th>
+                <th>Email ID</th>
+                <th>Details</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
               <tr>
                 <td>1</td>
-                <td>741</td>
-                <td>John doe</td>
-                <td>johndoe@gmail.com</td>
+                <td>542</td>
+                <td>John Doe</td>
+                <td>Johndoe@gmail.com</td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-primary btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_detail"
-                      >Details</a
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_detail"
                     >
+                      Details
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-warning btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_edit"
-                      >Edit</a
+                      class="btn btn-sm btn-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_edit"
                     >
+                      Edit
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-danger btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_delete"
-                      >Delete</a
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_delete"
                     >
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>741</td>
-                <td>John doe</td>
-                <td>johndoe@gmail.com</td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-primary btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_detail"
-                      >Details</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-warning btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_edit"
-                      >Edit</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-danger btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_delete"
-                      >Delete</a
-                    >
+                      Delete
+                    </a>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>1</td>
-                <td>741</td>
-                <td>John doe</td>
-                <td>johndoe@gmail.com</td>
+                <td>542</td>
+                <td>John Doe</td>
+                <td>Johndoe@gmail.com</td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-primary btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_detail"
-                      >Details</a
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_detail"
                     >
+                      Details
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-warning btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_edit"
-                      >Edit</a
+                      class="btn btn-sm btn-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_edit"
                     >
+                      Edit
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-danger btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_delete"
-                      >Delete</a
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_delete"
                     >
+                      Delete
+                    </a>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>1</td>
-                <td>741</td>
-                <td>John doe</td>
-                <td>johndoe@gmail.com</td>
+                <td>542</td>
+                <td>John Doe</td>
+                <td>Johndoe@gmail.com</td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-primary btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_detail"
-                      >Details</a
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_detail"
                     >
+                      Details
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-warning btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_edit"
-                      >Edit</a
+                      class="btn btn-sm btn-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_edit"
                     >
+                      Edit
+                    </a>
                   </div>
                 </td>
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
-                      class="btn btn-danger btn-sm"
-                      data-bs-target="modal"
-                      data-bs-toggle="#employee_delete"
-                      >Delete</a
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_delete"
                     >
+                      Delete
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>542</td>
+                <td>John Doe</td>
+                <td>Johndoe@gmail.com</td>
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_detail"
+                    >
+                      Details
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_edit"
+                    >
+                      Edit
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#employee_delete"
+                    >
+                      Delete
+                    </a>
                   </div>
                 </td>
               </tr>
@@ -311,6 +322,33 @@
         </div>
       </div>
     </div>
+    <!-- Employees Data -->
+
+    <!-- Add Employee Modal-->
+    <div
+      class="modal fade"
+      id="add_employee"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      style="backdrop-filter: blur(5px)"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Add Employee Data</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Employee Modal-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.j"></script>
   </body>
