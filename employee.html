@@ -443,7 +443,7 @@
     </div>
     <!-- Add Employee Modal-->
 
-    <!--  Employee Modal-->
+    <!--  Employee Details Modal-->
     <div
       class="modal fade"
       id="employee_detail"
@@ -515,7 +515,7 @@
         </div>
       </div>
     </div>
-    <!--  Employee Modal-->
+    <!--  Employee Details Modal-->
 
     <!-- Edit Employee Modal-->
     <div
@@ -641,6 +641,47 @@
       </div>
     </div>
     <!-- Edit Employee Modal-->
+
+    <!--  Employee Details Modal-->
+    <div
+      class="modal fade"
+      id="employee_delete"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      style="backdrop-filter: blur(5px)"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-body text-center d-flex justify-content-between align-text-center"
+          >
+            <h4 class="fw-light m-0">
+              Do You want to delete <strong><q>John Doe</q></strong
+              >?
+            </h4>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-sm btn-danger">YES!</button>
+            <button
+              type="submit"
+              class="btn btn-sm btn-warning"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            >
+              Nope, Go back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Employee Details Modal-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
