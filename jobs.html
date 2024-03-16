@@ -351,10 +351,10 @@
     </div>
     <!-- Employees Data -->
 
-    <!-- Add Employee Modal-->
+    <!-- Add job Modal-->
     <div
       class="modal fade"
-      id="add_employee"
+      id="add_job"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -363,7 +363,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header text-bg-dark">
-            <h5 class="modal-title">Add Employee Data</h5>
+            <h5 class="modal-title">Add Job Details</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -384,69 +384,20 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="First Name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="Last Name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        class="form-control form-control-sm"
-                        placeholder="Email ID"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="tel"
-                        class="form-control form-control-sm"
-                        placeholder="Phone"
-                        required
-                      />
-                    </div>
-                  </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label="Job Assigned"
-                      >
-                        <option selected>Select job for Employee</option>
-                        <option value="Web Designer">Web Designer</option>
-                        <option value="Front End Developer">
-                          Front End Developer
-                        </option>
-                        <option value="Back End Developer">
-                          Back End Developer
-                        </option>
-                        <option value="Graphic Design">Graphic Design</option>
-                        <option value="Digital Market">Digital Market</option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Job Name"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-10">
                     <div class="d-grid">
                       <button type="submit" class="btn btn-success btn-sm">
-                        Add Employee
+                        Add Job
                       </button>
                     </div>
                   </div>
@@ -469,12 +420,12 @@
         </div>
       </div>
     </div>
-    <!-- Add Employee Modal-->
+    <!-- Add job Modal-->
 
-    <!--  Employee Details Modal-->
+    <!-- job Details Modal-->
     <div
       class="modal fade"
-      id="employee_detail"
+      id="job_detail"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -483,7 +434,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header text-bg-dark">
-            <h5 class="modal-title">Employee Data</h5>
+            <h5 class="modal-title">job Data</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -498,28 +449,12 @@
                 <td>1</td>
               </tr>
               <tr>
-                <th>Employee ID</th>
-                <td>653</td>
+                <th>Date</th>
+                <td>22th may 2024</td>
               </tr>
               <tr>
-                <th>First Name</th>
-                <td>Johne</td>
-              </tr>
-              <tr>
-                <th>Last Name</th>
-                <td>Doe</td>
-              </tr>
-              <tr>
-                <th>Email ID</th>
-                <td>JohnDoe77@gmail.com</td>
-              </tr>
-              <tr>
-                <th>Phone</th>
-                <td>+234 8123 456 886</td>
-              </tr>
-              <tr>
-                <th>joining Date</th>
-                <td>25th May, 2023</td>
+                <th>job Name</th>
+                <td>Graphic Design</td>
               </tr>
             </table>
           </div>
@@ -528,7 +463,7 @@
               href="#"
               class="btn btn-sm btn-warning"
               data-bs-toggle="modal"
-              data-bs-target="#employee_edit"
+              data-bs-target="#job_edit"
             >
               Edit Details</a
             >
@@ -543,12 +478,12 @@
         </div>
       </div>
     </div>
-    <!--  Employee Details Modal-->
+    <!-- job Details Modal-->
 
-    <!-- Edit Employee Modal-->
+    <!-- Edit Job Modal-->
     <div
       class="modal fade"
-      id="employee_edit"
+      id="job_edit"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -557,7 +492,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header text-bg-dark">
-            <h5 class="modal-title">Edit Employee Data</h5>
+            <h5 class="modal-title">Edit job Data</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -574,78 +509,26 @@
                       <input
                         type="date"
                         class="form-control form-control-sm"
-                        value="2023-05-25"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="First Name"
-                        value="John "
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="Last Name"
-                        value="Doe"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        class="form-control form-control-sm"
-                        placeholder="Email ID"
-                        value="Johndoe@gmail.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="tel"
-                        class="form-control form-control-sm"
-                        placeholder="Phone"
-                        value="+234 81234 657 754"
+                        value=" 2023 May, 25th"
                         required
                       />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label="Job Assigned"
-                      >
-                        <option>Select job for Employee</option>
-                        <option value="Web Designer">Web Designer</option>
-                        <option selected value="Front End Developer">
-                          Front End Developer
-                        </option>
-                        <option value="Back End Developer">
-                          Back End Developer
-                        </option>
-                        <option value="Graphic Design">Graphic Design</option>
-                        <option value="Digital Market">Digital Market</option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Job Name"
+                        value="Graphic Designer"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-10">
                     <div class="d-grid">
-                      <button type="submit" class="btn btn-dark btn-sm">
-                        Update Employee
+                      <button type="submit" class="btn btn-warning btn-sm">
+                        Update Job
                       </button>
                     </div>
                   </div>
@@ -653,7 +536,7 @@
                     <div class="d-grid">
                       <button
                         type="button"
-                        class="btn btn-success btn-sm"
+                        class="btn btn-danger btn-sm"
                         data-bs-dismiss="modal"
                         aria-label="close"
                       >
@@ -668,7 +551,7 @@
         </div>
       </div>
     </div>
-    <!-- Edit Employee Modal-->
+    <!-- Edit Job Modal-->
 
     <!--  Employee Details Modal-->
     <div
